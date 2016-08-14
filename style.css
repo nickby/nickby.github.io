@@ -1,0 +1,65 @@
+/* обнуляем все отступы */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* для IE9 убираем рамку вокруг картинки-сслыки */
+img{
+    border: none;
+}
+
+/* общие параметры для всей страницы */
+body{
+    background: #F5F5F5 url(images/body-bg.jpg) top repeat-x;
+    font: 12px Arial; 
+    color: #555555;
+    line-height: 1.3;
+}
+
+/* размер каркаса страницы */
+.karkas{
+    width: 755px;
+    margin: 0 auto;     /* auto для left/right - каркас по центру, 0 - отступ сверху/снизу */
+}
+
+.header{
+    padding: 30px 0 0 0; /* смещение логотипа от верха */
+    margin-bottom: 20px; /* между header и content-image */
+}
+
+.logo{
+    margin: 0 auto 20px auto;   /* пытаемся центрировать лого, но не получается - строка*/
+    display: block;             /* центрируются только блоки */
+}
+
+.menu{
+    list-style: none; /* убираем маркеры списка */
+    background: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 1px solid #F3F3F3;
+    border-top: 1px solid #F3F3F3;
+    border-right: 1px solid #F3F3F3;
+    border-bottom: 3px solid #9Dc5f0;
+    overflow: hidden; /* иначе сьедит нижний li */
+}
+
+/* отдельно для позиций списка */
+.menu li{
+    float: left;                    /* склеиваем список в одну строку (не забываем в родителе overflow: hidden)*/
+    border-left: 1px solid #F3F3F3; /* серая левая граница */
+    padding: 8px 25px;
+}
+/* для первого элемента списка убираем задвоенную границу */
+.menu li:first-child{
+    border-left: none;
+}
+/* назначаем цвета для ссылок внутри списка */
+.menu li a {
+    color: #5f5d67;
+    text-decoration: none; /* убрать подчеркивание */
+}
+/* псевдокласс hover - когда курсор над ссылкой, то ...*/
+.menu li a:hover {
+    color: #008def;
+}
