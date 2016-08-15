@@ -16,6 +16,10 @@ body{
     line-height: 1.3;
 }
 
+/* оформаляем все ссылки на странице общим стилем с цветом из меню ниже*/
+a { color: #008def; }
+a:hover { text-decoration: none; }
+
 /* размер каркаса страницы */
 .karkas{
     width: 755px;
@@ -59,7 +63,61 @@ body{
     color: #5f5d67;
     text-decoration: none; /* убрать подчеркивание */
 }
-/* псевдокласс hover - когда курсор над ссылкой, то ...*/
+/* псевдокласс hover - когда курсор над ссылкой, то ... меняем цвет */
 .menu li a:hover {
     color: #008def;
+}
+
+.main-content {
+    overflow: hidden; /* чтобы не уезжал ввер вправо footer */
+}
+
+.main-content h1{
+    font: normal 24px "Times New Roman";
+    margin-bottom: 20px; /* между заголовком и тектом снизу*/
+}
+.main-content h2{
+    font: normal 20px "Times New Roman";
+    margin-bottom: 20px; /* между заголовком и тектом снизу*/
+}
+.main-content h3{
+    font: normal 16px "Times New Roman";
+    margin-bottom: 20px; /* между заголовком и тектом снизу*/
+}
+
+/* межстрочный интервал */
+.main-content p{
+    margin-bottom: 20px;
+}
+
+.main-content-img{
+    margin-bottom: 20px;
+}
+
+.content-left {
+    background: #FFF;
+    padding: 30px 30px  32000px 30px; /* растягиваем вниз блок на 32000 */
+    margin-bottom: -32000px;          /* компенсируем растяжение в 32000,  чтобы выровнять высоту с правым блоком */
+    width: 420px; /* 480-30-30 */
+    float: left;  /* чтобы поднялся в право нижний блок */
+    
+}
+
+.right-bar {
+    background: #FFF;
+    width: 230px;
+    padding: 30px 10px 32000px 25px;  /* растягиваем вниз блок на 32000 */
+    margin-bottom: -32000px;          /* компенсируем растяжение в 32000,  чтобы выровнять высоту с левым блоком */
+    float: right;
+    font-size: 14px;
+    font-family: "Trebuchet MS";
+    color: #333;
+}
+.right-bar h1 {
+    font-family: Georgia;
+}
+
+.footer {
+    padding: 15px 0 20px 30px;
+    color: #a1a0a7;
 }
