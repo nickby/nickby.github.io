@@ -6,9 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Bootstrap #1</title>
+        
+        <!-- Site icons in tabs -->
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Логотоип</a>
+                    <a class="navbar-brand" href="catalog.html">Логотип</a>
                 </div>
                 <div class="collapse navbar-collapse" id="resposive-menu">
                     <ul class="nav navbar-nav">
@@ -47,6 +51,20 @@
                         <li><a href="#">Пункт 3</a></li>
                         <li><a href="#">Пункт 4</a></li>
                     </ul>
+                    
+                    <!--Вход на сайт - форма авторизации-->
+                    <form action="#" class="navbar-form navbar-right" method="get">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="email" value="" size="10">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="password" value="" size="10">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-sign-in"></i> ВОЙТИ
+                        </button>
+                    </form>
+                    
                 </div>
             </div>
         </div>
@@ -93,30 +111,237 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-
+        
         <div class="container">
             <div class="row">
                 <h1>Название страницы</h1>
-            </div>
-        </div>
+                <!-- Кнопки -->
+                <p>
+                    <!-- Типы кнопок -->
+                    <a href="#" class="btn btn-default"><i class="fa fa-spinner fa-spin"></i> Loading</a>
+                    <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-alert"></i> Кнопка</a>
+                    <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-gift"></i> Кнопка</a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-android"></i> Кнопка</a>
+                    <a href="#" class="btn btn-info"><i class="fa fa-info"></i> Кнопка</a>
+                    <a href="#" class="btn btn-warning"><i class="fa fa-warning"></i> Кнопка</a>
+                    <a href="#" class="btn btn-link"><i class="fa fa-linkedin-square fa-2x"></i> Кнопка</a>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="#" class="btn btn-info"><i class="fa fa-vk fa-2x"></i></a>
+                    <a href="#" class="btn btn-warning"><i class="fa fa-odnoklassniki fa-2x"></i></a>
+                </p>
+                <!-- Размеры кнопок -->
+                <p>
+                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-warning"></i> Button XS</a>
+                    <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-warning"></i> Button SM</a>
+                    <a href="#" class="btn btn-danger "><i class="fa fa-warning"></i> Button MD</a>
+                    <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-warning"></i> Button LG</a>
+                </p>
 
-        <!-- пример резинового контейнера -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4"></div>
-                    </div>
-                </div>
-                <div class="col-md-4 hidden-md visible-lg"></div>
             </div>
         </div>
         
-        <!-- фиксируем футер -->
-        <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <!--группа кнопок-->
+        <div class="container">
+            <div class="row">
+                <div class="btn-toolbar">
+                    <div class="btn-group btn-group-lg">
+                        <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-alert"></i></a>
+                        <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-download"></i></a>
+                        <a href="#" class="btn btn-success"><i class="fa fa-android"></i></a>
+                    </div>
+                    <div class="btn-group btn-group-lg">
+                        <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-alert"></i></a>
+                        <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-download"></i></a>
+                        <a href="#" class="btn btn-success"><i class="fa fa-android"></i></a>
+                    </div>
+                </div>
+                <br>
+                <div class="btn-toolbar">
+                    <div class="btn-group btn-group-justified">
+                        <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-alert"></i></a>
+                        <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-download"></i></a>
+                        <a href="#" class="btn btn-success"><i class="fa fa-android"></i></a>
+                    </div>
+                </div>
+                <br>
+                <div class="btn-group btn-group-vertical">
+                    <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-download"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-android"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-apple"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-battery-full"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-vk"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-remove"></i></a>
+                </div>
+                    <div class="btn-group dropup">
+                        <button class="btn btn-primary">
+                            Выпадающее меню
+                        </button>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >Ссылка</a></li>
+                            <li><a href="#" >Ссылка</a></li>
+                            <li><a href="#" >Ссылка</a></li>
+                            <li><a href="#" >Ссылка</a></li>
+                        </ul>
+                    </div>                
+            </div>
         </div>
+
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <!--закладки-->
+                    <div class="tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка 1</a></li>
+                            <li><a href="#tab-2" data-toggle="tab">Вкладка 2</a></li>
+                            <li><a href="#tab-3" data-toggle="tab">Вкладка 3</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab-1">
+                                <p>Text #1</p>
+                                <!--<img src="images/olimpic.jpg" alt="" class="img-rounded">-->
+                            </div>
+                            <div class="tab-pane fade" id="tab-2">
+                                <p>Text #2</p>
+                                <img src="images/olimpic.jpg" alt="" class="img-circle">
+                            </div>
+                            <div class="tab-pane fade" id="tab-3">
+                                <p>Text #3</p>
+                                <img src="images/olimpic.jpg" alt="" class="img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!--Спойлер-->
+                <div class="col-md-6">
+                    <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Code</a>
+                    <div class="collapse" id="spoiler-1">
+                        <div class="well">
+                            Code example: <code>&lt;section&gt;</code> should be wrapped as inline.
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--Аккордион-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <div id="accordion" class="panel-group">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Открыть 1й слайд</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapse-1">
+                                <div class="panel-body">
+                                    <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Открыть 2й слайд</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-2">
+                                <div class="panel-body">
+                                    <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Открыть 3й слайд</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-3">
+                                <div class="panel-body">
+                                    <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <!--ProgressBar-->
+        <div class="container">
+            <div class="row">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="min-width: 2%; width: 10%;">10%</div>
+                    <div class="progress-bar progress-bar-success" style="min-width: 2%; width: 20%;">20%</div>
+                    <div class="progress-bar progress-bar-info" style="min-width: 2%; width: 20%;">20%</div>
+                    <div class="progress-bar progress-bar-warning" style="min-width: 2%; width: 30%;">30%</div>
+                    <div class="progress-bar progress-bar-primary" style="min-width: 2%; width: 20%;">20%</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" style="min-width: 2%; width: 90%;">90%</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" style="min-width: 2%; width: 60%;">60%</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+
+        <!-- фиксируем футер
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+        </div> -->
+        
+        
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h4 class="modal-title">Модальное окно</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Это модальное окно</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Template</title>
+
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+
+      <!-- создаем блок навигации внутри фиксированного контейнера -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resposive-menu">
+                        <span class="sr-only">Открыть навигацию</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Логотип</a>
+                </div>
+                <div class="collapse navbar-collapse" id="resposive-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Пункт 1</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Пункт 2.1</a></li>
+                                <li><a href="#">Пункт 2.2</a></li>
+                                <li><a href="#">Пункт 2.3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Пункт 2.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Пункт 3</a></li>
+                        <li><a href="#">Пункт 4</a></li>
+                    </ul>
+                    
+                    <!--Вход на сайт - форма авторизации-->
+                    <form action="#" class="navbar-form navbar-right" method="get">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="email" value="" size="10">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="password" value="" size="10">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-sign-in"></i> ВОЙТИ
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+      
+
+        <div class="container">
+            <div class="row">
+                <div class="container"> <!-- еще один контейнер, чтобы выровнять по бокам с верхним меню-->
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">Элемент 1 <span class="badge">18</span></a></li>
+                        <li ><a href="#">Элемент 2 <span class="badge">10</span></a></li>
+                        <li ><a href="#">Элемент 3 <span class="badge">15</span></a></li>
+                        <li ><a href="#">Элемент 4 <span class="badge">0</span></a></li>
+                    </ul>
+                    <hr>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">Элемент 1 <span class="badge">18</span></a></li>
+                        <li ><a href="#">Элемент 2 <span class="badge">10</span></a></li>
+                        <li ><a href="#">Элемент 3 <span class="badge">15</span></a></li>
+                        <li ><a href="#">Элемент 4 <span class="badge">0</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/400x240" alt="">
+                        <div class="caption">
+                            <h3><a href="#">Sprint at DrupalCon New Orleans!</a></h3>
+                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/400x240" alt="">
+                        <div class="caption">
+                            <h3><a href="#">MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
+                            <p>The digital division of Major League Soccer maintains multiple sites and applications delivering information, news, videos, and stats to eager soccer fans.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/400x240" alt="">
+                        <div class="caption">
+                            <h3><a href="#">Managing Multiple Timezones for Events in Drupal</a></h3>
+                            <p>How does a Drupal developer handle timezones when managing events in multiple locations? How do you display the correct date and time for these various locations? David Spira, one of our Experience Strategists at Phase2, created an ingenious solution for this common dilemma. </p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+            
+            
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/400x240" alt="">
+                        <div class="caption">
+                            <h3><a href="#">Sprint at DrupalCon New Orleans!</a></h3>
+                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/400x240" alt="">
+                        <div class="caption ">
+                            <h3><a href="#">MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
+                            <p>The digital division of Major League Soccer maintains multiple sites and applications delivering information, news, videos, and stats to eager soccer fans.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
