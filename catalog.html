@@ -6,7 +6,7 @@
         <title>Bootstrap Template</title>
 
         <link rel="shortcut icon" href="favicon.png" type="image/png">
-        
+
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/font-awesome.css" rel="stylesheet">
@@ -20,62 +20,151 @@
         <![endif]-->
     </head>
     <body>
-        
 
-      <!-- создаем блок навигации внутри фиксированного контейнера -->
-        <div class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
+        <!--Выпадающая форма авторизации в навигации на Bootstrap 3-->
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resposive-menu">
-                        <span class="sr-only">Открыть навигацию</span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Логотип</a>
+                    <a class="navbar-brand" href="#">Login dropdown</a>
                 </div>
-                <div class="collapse navbar-collapse" id="resposive-menu">
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Пункт 1</a></li>
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2 <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Пункт 2.1</a></li>
-                                <li><a href="#">Пункт 2.2</a></li>
-                                <li><a href="#">Пункт 2.3</a></li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Пункт 2.4</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Пункт 3</a></li>
-                        <li><a href="#">Пункт 4</a></li>
                     </ul>
-                    
-                    <!--Вход на сайт - форма авторизации-->
-                    <form action="#" class="navbar-form navbar-right" method="get">
+                    <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="email" value="" size="10">
+                            <input type="text" class="form-control" placeholder="Search">
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="password" value="" size="10">
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fa fa-sign-in"></i> ВОЙТИ
-                        </button>
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>                    
 
-      
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <p class="navbar-text">Already have an account?</p>
+                        </li>                
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Login via
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            or
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> keep me logged-in
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            New here ? <a href="#"><b>Join Us</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+
 
         <div class="container">
             <div class="row">
+                <!-- Breadcrumb - Хлебные крошки -->
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#"><i class="fa fa-home"></i> Главная</a>
+                        </li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Категория</a></li>
+                        <li class="active">Название поста</li> <!--активная страница не должна быть ссылкой-->
+                    </ol>
+                </div>
+
+                <!--Хлебные крошки для Bootstrap 3 в виде треугольных стрелок-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <h2>Breadcrumb Default</h2>
+                            <div class="btn-group btn-breadcrumb">
+                                <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
+                                <a href="#" class="btn btn-default">Snippets</a>
+                                <a href="#" class="btn btn-default">Breadcrumbs</a>
+                                <a href="#" class="btn btn-default">Default</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <h2>Breadcrumb Success</h2>
+                            <div class="btn-group btn-breadcrumb">
+                                <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-home"></i></a>
+                                <a href="#" class="btn btn-success">Snippets</a>
+                                <a href="#" class="btn btn-success">Breadcrumbs</a>
+                                <a href="#" class="btn btn-success">Success</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <h2>Breadcrumb Warning</h2>
+                            <div class="btn-group btn-breadcrumb">
+                                <a href="#" class="btn btn-warning"><i class="glyphicon glyphicon-home"></i></a>
+                                <a href="#" class="btn btn-warning">Snippets</a>
+                                <a href="#" class="btn btn-warning">Breadcrumbs</a>
+                                <a href="#" class="btn btn-warning">Warning</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>                                
+
                 <div class="container"> <!-- еще один контейнер, чтобы выровнять по бокам с верхним меню-->
                     <ul class="nav nav-pills">
                         <li class="active"><a href="#">Элемент 1 <span class="badge">18</span></a></li>
-                        <li ><a href="#">Элемент 2 <span class="badge">10</span></a></li>
+                        <li ><a href="#">Элемент 2 <span class="badge badge-warning">10</span></a></li>
                         <li ><a href="#">Элемент 3 <span class="badge">15</span></a></li>
                         <li ><a href="#">Элемент 4 <span class="badge">0</span></a></li>
                     </ul>
@@ -88,69 +177,195 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-sm-4 col-xs-12">
+
+            <div class="row masonry" data-columns>
+                <div class="item">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/400x240" alt="">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
                         <div class="caption">
-                            <h3><a href="#">Sprint at DrupalCon New Orleans!</a></h3>
+                            <h3><a href="#">1 Sprint at DrupalCon New Orleans!</a></h3>
                             <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
                             <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
+                <div class="item">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/400x240" alt="">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
                         <div class="caption">
-                            <h3><a href="#">MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
+                            <h3><a href="#">2 MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
                             <p>The digital division of Major League Soccer maintains multiple sites and applications delivering information, news, videos, and stats to eager soccer fans.</p>
                             <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
+                <div class="item">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/400x240" alt="">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
                         <div class="caption">
-                            <h3><a href="#">Managing Multiple Timezones for Events in Drupal</a></h3>
+                            <h3><a href="#">3 Sprint at DrupalCon New Orleans!</a></h3>
+                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                        <div class="caption">
+                            <h3><a href="#">4 Managing Multiple Timezones for Events in Drupal</a></h3>
                             <p>How does a Drupal developer handle timezones when managing events in multiple locations? How do you display the correct date and time for these various locations? David Spira, one of our Experience Strategists at Phase2, created an ingenious solution for this common dilemma. </p>
                             <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-
-            </div>    
-            
-            
-            <div class="row">
-                <div class="col-sm-6 col-xs-12">
+                <div class="item">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/400x240" alt="">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
                         <div class="caption">
-                            <h3><a href="#">Sprint at DrupalCon New Orleans!</a></h3>
-                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
-                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/400x240" alt="">
-                        <div class="caption ">
-                            <h3><a href="#">MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
+                            <h3><a href="#">5 MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
                             <p>The digital division of Major League Soccer maintains multiple sites and applications delivering information, news, videos, and stats to eager soccer fans.</p>
                             <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                        <div class="caption">
+                            <h3><a href="#">6 Sprint at DrupalCon New Orleans!</a></h3>
+                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
+                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
+                            <p>Are you prepared for the core and contrib sprints at DrupalCon New Orleans? The full schedule of sprints can be found on the DrupalCon NOLA site. There are extended (early and post-con) sprints, sprints throughout the conference at the sprint lounge (rooms 275-277 at the convention center), and a dedicated sprint day on Friday.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                        <div class="caption">
+                            <h3><a href="#">7 Managing Multiple Timezones for Events in Drupal</a></h3>
+                            <p>How does a Drupal developer handle timezones when managing events in multiple locations? How do you display the correct date and time for these various locations? David Spira, one of our Experience Strategists at Phase2, created an ingenious solution for this common dilemma. </p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                        <div class="caption">
+                            <h3><a href="#">8 MLS: Saving Money, Enhancing Fans’ Digital Experiences</a></h3>
+                            <p>The digital division of Major League Soccer maintains multiple sites and applications delivering information, news, videos, and stats to eager soccer fans.</p>
+                            <a href="#" class="btn btn-success">Подробнее  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+            <!--Стандартная пагинация-->
+            <nav class="text-center">
+                <ul class="pagination pagination-lg">
+                    <li class="disabled">
+                        <a href="#">
+                            <i class="fa fa-angle-double-left"></i>
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a href="#">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Альтернативная пагинация-->
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a href="#"><i class="glyphicon glyphicon-arrow-left"></i> Назад</a></li>
+                    <li class="next disabled"><a href="#">Вперед <i class="glyphicon glyphicon-arrow-right"></i></li>
+                </ul>
+            </nav>
+
+        </div>    
+
+        <!--Footer-->
+        <!-- Origional snipet by msurguy<http://bootsnipp.com/msurguy>, I editted his snipet so that it works with bootstrap 3.3 -->
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>GitHub<li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact & support</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Site status</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Applications<li>
+                        <li><a href="#">Product for Mac</a></li>
+                        <li><a href="#">Product for Windows</a></li>
+                        <li><a href="#">Product for Eclipse</a></li>
+                        <li><a href="#">Product mobile apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Services<li>
+                        <li><a href="#">Web analytics</a></li>
+                        <li><a href="#">Presentations</a></li>
+                        <li><a href="#">Code snippets</a></li>
+                        <li><a href="#">Job board</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Documentation<li>
+                        <li><a href="#">Product Help</a></li>
+                        <li><a href="#">Developer API</a></li>
+                        <li><a href="#">Product Markdown</a></li>
+                        <li><a href="#">Product Pages</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-8">
+                    <ul class="list-unstyled list-inline pull-left">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <p class="text-muted pull-right">© 2015 Company Name. All rights reserved</p>
+                </div>
+            </div>
+        </div>      
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.js"></script>
+        <script src="js/salvattore.min.js"></script>
     </body>
 </html>

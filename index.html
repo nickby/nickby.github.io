@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Bootstrap #1</title>
-        
+
         <!-- Site icons in tabs -->
         <link rel="shortcut icon" href="favicon.png" type="image/png">
 
@@ -51,7 +51,7 @@
                         <li><a href="#">Пункт 3</a></li>
                         <li><a href="#">Пункт 4</a></li>
                     </ul>
-                    
+
                     <!--Вход на сайт - форма авторизации-->
                     <form action="#" class="navbar-form navbar-right" method="get">
                         <div class="form-group">
@@ -64,7 +64,7 @@
                             <i class="fa fa-sign-in"></i> ВОЙТИ
                         </button>
                     </form>
-                    
+
                 </div>
             </div>
         </div>
@@ -111,15 +111,25 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-        
+
         <div class="container">
             <div class="row">
                 <h1>Название страницы</h1>
                 <!-- Кнопки -->
                 <p>
                     <!-- Типы кнопок -->
-                    <a href="#" class="btn btn-default"><i class="fa fa-spinner fa-spin"></i> Loading</a>
-                    <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-alert"></i> Кнопка</a>
+                    <a href="#" class="btn btn-default" data-placement="bottom" data-toggle="tooltip" title="Простая подсказка"><i class="fa fa-spinner fa-spin"></i> Loading</a>
+                    <button type="button" 
+                            class="btn btn-danger" 
+                            data-toggle="popover" 
+                            title="Заголовок окна" 
+                            data-content="Текст окна или ссылка <a href='http://tut.by'>Новости</a> на другое"
+                            data-placement="top" 
+                            data-trigger="hover"
+                            data-html="true"
+                            >
+                        <i class="glyphicon glyphicon-alert"></i> Кнопка
+                    </button>
                     <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-gift"></i> Кнопка</a>
                     <a href="#" class="btn btn-success"><i class="fa fa-android"></i> Кнопка</a>
                     <a href="#" class="btn btn-info"><i class="fa fa-info"></i> Кнопка</a>
@@ -140,7 +150,7 @@
 
             </div>
         </div>
-        
+
         <!--группа кнопок-->
         <div class="container">
             <div class="row">
@@ -174,20 +184,20 @@
                     <a href="#" class="btn btn-success"><i class="fa fa-cart-plus"></i></a>
                     <a href="#" class="btn btn-success"><i class="fa fa-remove"></i></a>
                 </div>
-                    <div class="btn-group dropup">
-                        <button class="btn btn-primary">
-                            Выпадающее меню
-                        </button>
-                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" >Ссылка</a></li>
-                            <li><a href="#" >Ссылка</a></li>
-                            <li><a href="#" >Ссылка</a></li>
-                            <li><a href="#" >Ссылка</a></li>
-                        </ul>
-                    </div>                
+                <div class="btn-group dropup">
+                    <button class="btn btn-primary">
+                        Выпадающее меню
+                    </button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" >Ссылка</a></li>
+                        <li><a href="#" >Ссылка</a></li>
+                        <li><a href="#" >Ссылка</a></li>
+                        <li><a href="#" >Ссылка</a></li>
+                    </ul>
+                </div>                
             </div>
         </div>
 
@@ -220,7 +230,7 @@
                     </div>
 
                 </div>
-                
+
                 <!--Спойлер-->
                 <div class="col-md-6">
                     <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Code</a>
@@ -230,15 +240,15 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-        
+
         <!--Аккордион-->
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    
+
                     <div id="accordion" class="panel-group">
                         <div class="panel panel-warning">
                             <div class="panel-heading">
@@ -287,7 +297,7 @@
         <br>
         <br>
         <br>
-        
+
         <!--ProgressBar-->
         <div class="container">
             <div class="row">
@@ -306,8 +316,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         <br>
         <br>
         <br>
@@ -315,13 +325,13 @@
         <br>
         <br>
 
-        
+
 
         <!-- фиксируем футер
         <div class="navbar navbar-inverse navbar-fixed-bottom">
         </div> -->
-        
-        
+
+
         <div class="modal fade" id="modal-1">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -340,9 +350,58 @@
                 </div>
             </div>
         </div>
-        
-        
-        
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+
+                    <!--Navigation List--> 
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <h1>Twitter Bootstrap</h1>
+                            <h3>Navigation List Example</h3>
+                            <div class="span2">
+                                <ul class="nav nav-list">
+                                    <li class="nav-header">Pages</li>
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li class="nav-header">Library</li>
+                                    <li><a href="#">E-books</a></li>
+                                    <li><a href="#">Paper books</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Borrower List</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                   
+
+
+                </div>
+                <div class="col-xs-6">
+
+                    <!--Search-->
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <h1>Twitter Bootstrap</h1>
+                            <h3>Forms Example</h3>
+                            <form class="form-search">
+                                <input type="text" class="input-medium search-query">
+                                <button type="submit" class="btn">Search</button>
+                            </form>
+                        </div>
+                    </div>                    
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -352,6 +411,14 @@
         <script>
             $(function () {
                 $('.carousel').carousel({interval: 3000});
+            });
+        </script>
+
+        <!--Для подсказок Bootstrap не работает по-умолчанию отображение, запускаем вручную-->
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="popover"]').popover();
             });
         </script>
     </body>
